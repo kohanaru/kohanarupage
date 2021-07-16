@@ -30,7 +30,177 @@ font-family: arial;
     .fix-01{
         background:#fff; /背景を白色に/
         box-shadow:0 2px 8px rgba(30,30,80,.3); /影。不要なら削除/
+        left:0;@charset "UTF-8";
+
+nav ul{
+    display: table;
+    margin: 0 auto;
+    padding: 0 ;
+    width: 80%;
+    text-align: center;
+    color:#888888;
+font-family: arial;
+    }
+    nav li{
+    display: table-cell;
+    min-width: 50px;
+    }
+    nav a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #555;
+    padding-bottom: 5px;
+    }
+    nav li.current{
+    border-bottom: 3px solid #dfc6b7;
+    }
+    nav li:hover{
+    color: #d1b299;
+    border-bottom: 3px solid #d1b299;
+    }
+    .fix-01{
+        background:#fff; 
         left:0;
+        line-height:1;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index:100;
+        text-align:center;
+        padding:1rem;
+    }
+
+  .container{
+	width: 100%;
+    
+}
+
+.text{
+	font-family: 'arial';
+	font-size: 30px;
+	text-align: center;
+	margin-left: 50%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim 1.5s ease-out forwards;
+    padding-top: 300px ;
+    
+}
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+h3{
+      color:#888888;
+      font-family: arial ;
+      padding-bottom: 300px;
+  }
+
+
+#profile h2 {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    color:#333333;
+    font-family: arial;
+    text-align: center ;
+
+}
+.box-container{
+    display:flex;
+    
+}
+#profile img {
+     width:320px;
+     height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    margin: 60px 150px ;
+    }
+    #profile  p {
+        width:300px;
+        height:300px;
+        text-align: center;
+        border-radius:50%;
+        margin: 40px 100px ;
+        color:#888888;
+        font-family: arial;
+        text-align: left;
+        font-size: 15px;
+    }
+#work{
+    padding-bottom: 300px;
+}
+
+#work h2 {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        color:#333333;
+        font-family: arial;
+        text-align: center ;
+    }
+    .c-container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        padding: 0 15px;
+      }
+
+.swiper-container{
+   width: 1000px;
+   height: 400px;
+}
+
+#about h2 {
+    padding-bottom: px;
+    color:#333333;
+    font-family: arial;
+    text-align: center ;
+
+}
+#pickup {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-right: 30px;
+    margin-bottom: 60px;
+
+  }
+  #pickup article {
+    width: 23%;
+  }
+  #pickup .article-title {
+    font-size: 0.8rem;
+    margin: 20px 0 20px 0px 30px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 300px;
+    color:#888888;
+  }
+
+  #pickup p{
+      color: silver;
+    color:#333333;
+    font-family: arial;
+    text-align: center ;
+    padding-bottom: 19px;
+    font-size: 20px;
+  }
+
+  
         line-height:1;
         position:fixed;
         top:0;
